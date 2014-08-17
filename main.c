@@ -88,7 +88,7 @@ volatile uint8_t tick;
 ISR(INT0_vect) {
   if (debounce_p1 == 0) {
     b1_pressed = 1;
-    debounce_p1 == DEBOUNCE;
+    debounce_p1 = DEBOUNCE;
   }
 }
 
@@ -96,7 +96,7 @@ ISR(INT0_vect) {
 ISR(INT1_vect) {
   if (debounce_p2 == 0) {
     b2_pressed = 1;
-    debounce_p2 == DEBOUNCE;
+    debounce_p2 = DEBOUNCE;
   }
 }
 
